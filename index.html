@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Intro Page </title>
+<style>
+    
+h2 {
+
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align:center;
+  font-size:2rem;
+  font-weight:600;
+}
+h1{
+  text-align:center;
+  word-spacing:20px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size:3rem;
+  text-shadow:2px 2px 8px rgb(159, 11, 213)
+  
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes logoAnimation{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(180deg);
+    }
+}
+@keyframes backgroundanimation{
+    0% {background-color: #dfd0ef;}
+    25% {background-color: #cde0f5;}
+    50% {background-color: #c8f0e0;}
+    100% {background-color: #FFF1E6;}
+}
+body{
+    animation:backgroundanimation 4s infinite linear;
+}
+.logo{
+    width:15%;
+    margin:auto;
+    display:block;
+    transform:rotate3d(180deg);
+    animation:logoAnimation 3s infinite linear;
+    
+}
+.car{
+    margin:auto;
+    
+    display:block;
+    width:50%;
+    transition: transform 2s;
+
+}
+
+.car:hover{
+    
+    transform:scale(2);
+}
+.cardiv{
+    margin-top:100px;
+}
+@keyframes buttonanimation{
+    from{ transform:translateX(0%);}
+    to{transform:translateX(80vw);}
+}
+.btn{
+    margin-top:100px;
+    margin-bottom:100px;
+    display:inline-block;
+    background-color: rgb(47, 2, 66);
+    color: white;
+    text-align:center;
+    font-weight:600;
+    border-radius:10px;
+   position: absolute;
+    width:10%;
+    height:50px;
+    animation:buttonanimation 8s infinite alternate-reverse;
+}
+.btn:hover{
+    background-color: rgb(122, 19, 247);
+    color:black;
+
+}
+.feature{
+    margin-top:100px;
+    font-weight:800;
+    text-shadow:2px 2px 5px rgb(13, 86, 222)
+}
+.feature-card{
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+.feature-card img{
+    margin-top:200px;
+    margin-right: 20px;
+    width:20%;
+    float: left;
+    display:inline-block;
+}
+.feature-card pre{
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    width:85%;
+    margin-top:100px;
+    font-size:1.5rem;
+    
+}
+.feature-card pre:hover {
+    
+    transform: skew(5deg);
+    transition: transform 0.3s ease;
+}
+.reg{
+    font-size: 2rem;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="reg">
+    <pre>
+Name: Hareesha Nellakara
+Reg No: 24BCE1230
+Date: 16-01-26
+
+    </pre>
+</div>
+<img src="./car-logo.png" alt="logo" class="logo">
+<div class="cardiv">
+<h2>INTRODUCING THE  </h2>
+<img src="./car.jpg" alt="car" class="car">
+<br><br>
+<h1>LAMBORGHINI AVENTADOR SVJ</h1>
+</div>
+
+<div class="btn">
+    <p>BOOK NOW</p>
+</div>
+<br><br>
+<br><br><br><br>
+
+<div class="feature-card">
+    <h2 class="feature">FEATURES</h2>
+    <img src="tyre.png" alt="tyre">
+    <pre> 
+        Lamborghini Aventador SVJ comes with high-performance Pirelli P-Zero tyres.
+
+        These tyres provide maximum grip and stability, even at extreme speeds.
+
+        They ensure precise handling and enhance safety while cornering aggressively.</pre>
+</div>
+<div class="feature-card">
+    <img src="steering.png" alt="steering">
+    <pre> 
+        The Aventador SVJ is powered by a naturally aspirated V12 engine, delivering extreme acceleration.
+        
+        It achieves a top speed of 350 km/h, making it one of the fastest production cars in the world. 
+        
+        The car combines raw power with precision for an unmatched driving experience.</pre>
+</div>
+<div class="feature-card">
+    <img src="interior.png" alt="interior">
+    <pre> 
+        The interiors feature premium leather and Alcantara upholstery, reflecting Lamborghini’s luxury standards.
+        
+        Every seat is ergonomically designed for maximum comfort during high-speed drives.
+        
+        The dashboard and controls are meticulously crafted, blending performance with style.
+    </pre>
+
+
+</div>
+<div class="feature-card">
+    <img src="back.png" alt="back">
+    <pre> 
+        The Aventador SVJ uses an active aerodynamic system (ALA) for ultimate downforce and handling.
+        
+        Its design reduces drag while improving cornering stability at high speeds. 
+        
+        Every curve and spoiler is optimized to maximize performance and efficiency.</pre>
+</div>
+<div class="feature-card">
+    <img src="headlamps.png" alt="headlamps">
+    <pre> 
+        The Aventador SVJ is equipped with advanced LED Matrix headlights for superior visibility. 
+        
+        They automatically adjust brightness according to driving conditions.
+        
+        Their sleek design also enhances the car’s aggressive and futuristic look.</pre>
+</div>
+
+   
+    
+</div>
+</body>
+</html>
